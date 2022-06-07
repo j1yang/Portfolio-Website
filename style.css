@@ -1,5 +1,5 @@
 /* Global */
-:root{
+:root {
   /* Colour */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
@@ -31,48 +31,48 @@
 }
 
 /* Universal tags */
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--color-white);
 }
 
-ul{
+ul {
   list-style: none;
   padding-left: 0;
 }
 
 /* Typography */
-h1{
+h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-black);
   margin: 16px 0;
 }
 
-h2{
+h2 {
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
 }
 
-h3{
+h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 8px 0;
 }
 
-p{
+p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
@@ -80,7 +80,7 @@ p{
 }
 
 /* Navbar */
-#navbar{
+#navbar {
   display: flex;
   justify-content: space-between;
   background-color: var(--color-blue);
@@ -88,19 +88,19 @@ p{
   color: var(--color-white);
 }
 
-.navbar__logo i{
+.navbar__logo i {
   padding: 0.4em;
 }
-.navbar__logo{
+.navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
 
-.navbar__menu{
+.navbar__menu {
   display: flex;
 }
 
-.navbar__menu__item{
+.navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
@@ -114,7 +114,69 @@ p{
   border-bottom: 3px solid var(--color-white);
 }
 
-.navbar__menu__item:hover{
+.navbar__menu__item:hover {
   border-bottom: 2px solid var(--color-white);
   padding-bottom: 0;
+}
+
+/* Home */
+#home {
+  background: url("imgs/home-background.png") center no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+  object-fit: cover;
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact-btn {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+  margin-top: 1.3em;
+}
+.home__contact-btn a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+}
+.home__contact-btn a:before,
+.home__contact-btn a:after {
+  position: absolute;
+  content: "Contact Me!";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.home__contact-btn a:before {
+  color: var(--color-white);
+  background: var(--color-black);
+  transform: rotateY(0deg) translateZ(25px);
+}
+.home__contact-btn a:after {
+  color: var(--color-black);
+  transform: rotateX(90deg) translateZ(25px);
+}
+.home__contact-btn a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
 }
