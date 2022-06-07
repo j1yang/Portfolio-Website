@@ -59,7 +59,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
@@ -332,9 +332,41 @@ p {
   justify-content: center;
 }
 
-.QA__list {
+/* Contact */
+#contact {
+  background-color: var(--color-blue);
+  text-align: center;
+  padding: 50px 50px 20px 50px;
 }
 
-.QA__list i {
-  margin-right: 1em;
+.contact__email {
+  margin-bottom: 1.5em;
+}
+
+.contact__title,
+.contact__email,
+.contact__links,
+.contact__right {
+  color: var(--color-white);
+}
+
+.contact__links {
+  width: 110px;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contact__links i {
+  font-size: var(--font-large);
+}
+
+.contact__right {
+  margin-top: 1.5em;
+}
+
+.contact__links i:hover {
+  transform: scale(1.4);
+  color: var(--color-black);
 }
