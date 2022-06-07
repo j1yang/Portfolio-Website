@@ -124,6 +124,7 @@ p {
   background: url("imgs/home-background2.png") center no-repeat;
   padding: 40px;
   text-align: center;
+  height: 730px;
 }
 
 /* Button Design>: https://codepen.io/Anon_satyam/pen/JjXLoNJ */
@@ -133,11 +134,15 @@ p {
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
   object-fit: cover;
+  margin-top: 2.3em;
+  margin-bottom: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .home__title,
 .home__description {
   color: var(--color-white);
+  margin-bottom: 1em;
 }
 
 .home__contact-btn {
@@ -185,9 +190,6 @@ p {
 /* Section Common */
 .section {
   padding: 50px;
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 /* About */
@@ -255,4 +257,84 @@ p {
 
 .job__period {
   size: var(--font-micro);
+}
+
+/* Skills */
+
+#skills {
+  background-color: var(--color-blue);
+}
+
+.section__container {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skillset {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+  margin-top: 2em;
+}
+
+.skillset__title {
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 0.8em 2em;
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.QA {
+  background-color: var(--color-grey);
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.skill {
+  padding: 0.6em;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+
+.QA,
+.etc {
+  padding: 20px;
+}
+
+.QA li,
+.etc__list li {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.QA__list {
+}
+
+.QA__list i {
+  margin-right: 1em;
 }
