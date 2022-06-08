@@ -4,16 +4,18 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
   --color-black: #4d4d4d;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-dark-purple: #723bbf;
+  --color-purple: #9530d9;
+  --color-light-purple: #8d92f2;
+  --color-blue: #79baf2;
+  --color-light-blue: #6dccf2;
 
   /* Font Size */
   --font-large: 48px;
@@ -83,7 +85,7 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-blue);
+  background-color: var(--color-light-purple);
   align-items: center;
   color: var(--color-white);
 }
@@ -211,7 +213,7 @@ p {
 }
 
 .major__icon i:hover {
-  color: var(--color-orange);
+  color: var(--color-dark-purple);
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -262,7 +264,7 @@ p {
 /* Skills */
 
 #skills {
-  background-color: var(--color-blue);
+  background-color: var(--color-light-purple);
 }
 
 .section__container {
@@ -334,7 +336,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-blue);
+  background-color: var(--color-light-purple);
   text-align: center;
   padding: 50px 50px 20px 50px;
 }
@@ -369,4 +371,50 @@ p {
 .contact__links i:hover {
   transform: scale(1.4);
   color: var(--color-black);
+}
+
+/* Testimonial */
+#testimonials {
+  background-color: var(--color-light-white);
+  text-align: center;
+}
+
+.testimonials {
+  width: 1400px;
+  margin-top: 40px;
+  margin: auto;
+}
+
+.testimonial {
+  display: flex;
+  margin: 32px;
+}
+
+.testimonial_avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial_avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.testimonial_avatar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.testimonial__speech-bubble {
+  padding: 1em;
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+.testimonial__speech-bubble p {
+  color: var(--color-light-grey);
+}
+
+.testimonial__speech-bubble a {
+  color: var(--color-dark-purple);
 }
