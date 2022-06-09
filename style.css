@@ -390,7 +390,7 @@ p {
 }
 
 .testimonials {
-  width: 1400px;
+  width: 100%;
   margin-top: 40px;
   margin: auto;
 }
@@ -432,6 +432,11 @@ p {
 .testimonial-app {
   display: none;
 }
+
+#margin-left-1_5em {
+  margin-left: 1.5em;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 876px) {
   .navbar__toggle-btn {
@@ -472,10 +477,14 @@ p {
   }
   .testimonial_avatar {
     margin-bottom: 15px;
+    margin: 0 auto;
   }
   .testimonial {
     flex-direction: column;
     margin-left: 0;
+  }
+  #testimonials h3 {
+    margin-bottom: 2em;
   }
   .testimonial__speech-bubble {
     width: 300px;
