@@ -487,7 +487,7 @@ p {
     margin-bottom: 2em;
   }
   .testimonial__speech-bubble {
-    width: 300px;
+    width: 100%;
     margin-bottom: 1em;
   }
   .testimonial-web {
