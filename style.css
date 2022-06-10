@@ -389,6 +389,12 @@ p {
   text-align: center;
 }
 
+.testimonial__section-container{
+  width: 80%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 .testimonials {
   width: 100%;
   margin-top: 40px;
