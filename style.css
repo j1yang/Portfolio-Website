@@ -172,6 +172,7 @@ p {
   margin: 0 15px;
   perspective: 1000px;
   margin-top: 1.3em;
+  cursor: pointer;
 }
 .home__contact-btn a {
   font-size: 19px;
