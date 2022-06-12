@@ -38,8 +38,17 @@ document.addEventListener('scroll',()=>{
 
 
 // Show Arrow-Up button when scrolling
+const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll',()=>{
-  if(window.home){}
+  if(window.scrollY > homeHeight/2){
+    arrowUp.classList.add('visible');
+  }else{
+    arrowUp.classList.remove('visible');
+  }
+});
+
+arrowUp.addEventListener('click',()=>{
+  scrollIntoView('#home');
 });
 
 function scrollIntoView(selector){
