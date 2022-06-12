@@ -461,7 +461,7 @@ p {
   bottom: 50px;
   right: 50px;
   font-size: 50px;
-  background-color: var(--color-light-blue);
+  background-color: var(--color-black);
   color: white;
   border-radius: 50%;
   border: none;
