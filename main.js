@@ -20,7 +20,14 @@ navbarMenu.addEventListener('click', (event)=>{
   if(link == null){
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+//Navbar toggle button click-> show dropdown
+const navBarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navBarToggleBtn.addEventListener('click', ()=>{
+  navbarMenu.classList.toggle('open');
 });
 
 // Handle scrolling when contact btn clicked
@@ -55,3 +62,5 @@ function scrollIntoView(selector){
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior: 'smooth'});
 }
+
+
