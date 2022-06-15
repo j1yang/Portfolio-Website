@@ -214,7 +214,7 @@ p {
 }
 
 /* About */
-#about p{
+#about p, #skills p{
   font-size: 21px;
 }
 
