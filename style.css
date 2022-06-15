@@ -214,6 +214,10 @@ p {
 }
 
 /* About */
+#about p{
+  font-size: 21px;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
