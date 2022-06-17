@@ -17,6 +17,13 @@
   --color-blue: #79baf2;
   --color-light-blue: #6dccf2;
 
+  /* section colour */
+  --navBar-color: var(--color-black);
+  --about-color:var(--color-white);
+  --skill-color: #5F70C4;
+  --testinomial-color: var(--color-light-white);
+  --footer-color: var(--color-black);
+
   /* Font Size */
   --font-large: 48px;
   --font-medium: 28px;
@@ -287,7 +294,7 @@ p {
 /* Skills */
 
 #skills {
-  background-color: var(--color-light-purple);
+  background-color: var(--skill-color);
 }
 
 .section__container {
@@ -507,7 +514,7 @@ font-weight: bold;
 
 /* Testimonial */
 #testimonials {
-  background-color: var(--color-light-white);
+  background-color: var(--testinomial-color);
   text-align: center;
 }
 
@@ -602,7 +609,7 @@ font-weight: bold;
     flex-direction: column;
     align-items: flex-start;
     padding: 0.6em;
-    background-color: var(--color-black);
+    background-color: var(--navBar-color);
   }
 
   .navbar__menu {
