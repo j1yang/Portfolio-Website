@@ -64,3 +64,29 @@ function scrollIntoView(selector){
 }
 
 
+// Project
+
+const porjectBtnContainer = document.querySelector('.project__categories');
+const projectsContainer = document.querySelector('.projects__project');
+const projects = document.querySelectorAll('.project');
+
+porjectBtnContainer.addEventListener('click', (e)=>{
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if(filter == null){
+    return;
+  }
+  projectsContainer.classList.add('anim-out');
+  console.log(filter + '--');
+  
+  setTimeout(()=>{
+    projects.forEach((project)=>{
+      console.log(project.dataset.type+'-');
+      if(filter === '*' || filter === project.dataset.type){
+        project.classList.remove('invisible');
+      }else{
+        project.classList.add('invisible');
+      }
+    });
+    projectsContainer.classList.remove('anim-out');
+  },300)
+});

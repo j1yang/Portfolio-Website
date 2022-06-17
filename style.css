@@ -418,6 +418,15 @@ font-weight: bold;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all 300ms ease-in;
+}
+
+.projects__project.anim-out{
+  transform: scale(0.99) translateY(40px);
+  opacity: 0;
+  transition: all 300ms ease-out;
+
 }
 
 .project{
@@ -429,6 +438,10 @@ font-weight: bold;
   margin: 2px;
   background-color: var(--color-light-white);
   position: relative;
+}
+
+.project.invisible{
+  display: none;
 }
 
 .project__img{
