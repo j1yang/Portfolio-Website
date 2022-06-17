@@ -97,3 +97,32 @@ porjectBtnContainer.addEventListener('click', (e)=>{
     projectsContainer.classList.remove('anim-out');
   },300)
 });
+
+const sectionIds = [
+  '#home',
+  '#about',
+  '#skills',
+  '#projects',
+  '#testimonials',
+  '#contact'
+];
+
+const sections = sectionIds.map(id=> document.querySelector(id));
+const navItems = sectionIds.map(id=>document.querySelector(`[data-link="${id}"]`))
+console.log(sections);
+console.log(navItems);
+
+const observerOption = {
+  root:null,
+  rootMargin:'0px',
+  threshold: 0.3
+};
+
+const observerCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    console.log(entry.target);
+  });
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOption);
+sections.forEach(section => observer.observe(section))

@@ -159,7 +159,7 @@ p {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 2px solid var(--color-light-white);
+  border: 3px solid var(--color-light-white);
   object-fit: cover;
   margin-top: 2.3em;
   margin-bottom: 1.5em;
@@ -702,3 +702,4 @@ font-weight: bold;
     display: inline;
   }
 }
+
