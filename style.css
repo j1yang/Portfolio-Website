@@ -601,6 +601,11 @@ font-weight: bold;
 
 /* For below 768px screen width */
 @media screen and (max-width: 876px) {
+  .arrow-up{
+    bottom: 10px;
+    right: 10px;
+  }
+
   .navbar__toggle-btn {
     display: block;
   }
@@ -654,6 +659,14 @@ font-weight: bold;
   .skillset {
     flex-direction: column;
   }
+
+  #about h1,
+  #skills h1,
+  #projects h1,
+  #testimonials h1 {
+    font-size: 35px;
+  }
+
   .testimonial_avatar {
     margin-bottom: 15px;
     margin: 0 auto;
