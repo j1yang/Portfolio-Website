@@ -370,13 +370,15 @@ p {
   border: 1px solid var(--color-dark-white);
   border-radius: 4px;
   font-size: var(--font-regular);
-  padding: 8px 35px;
+  padding: 8px 0px 8px 25px;
+  width: 180px;
 }
 
 .category__btn.active,
 .category__btn:hover
 {
-background-color: var(--color-light-grey);
+background-color: var(--color-dark-white);
+font-weight: bold;
 }
 
 .category__count{
@@ -500,7 +502,7 @@ background-color: var(--color-light-grey);
 
 .contact__links i:hover {
   transform: scale(1.4);
-  color: var(--color-black);
+  color: var(--color-purple);
 }
 
 /* Testimonial */
@@ -600,7 +602,7 @@ background-color: var(--color-light-grey);
     flex-direction: column;
     align-items: flex-start;
     padding: 0.6em;
-    background-color: var(--color-light-purple);
+    background-color: var(--color-black);
   }
 
   .navbar__menu {
