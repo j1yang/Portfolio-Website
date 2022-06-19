@@ -156,14 +156,13 @@ sections.forEach(section => observer.observe(section));
 
 
 window.addEventListener('wheel', ()=>{
-  const currentClientHeight = window.scrollY + window.innerHeight + 1;
-  console.log(`scroll height: ${currentClientHeight}`);
-  console.log(`client height: ${document.body.clientHeight}`);
+  const currentClientHeight = window.scrollY + window.innerHeight;
 
   if(window.scrollY === 0){
     selectedNavIndex = 0;
-  }else if(Math.round(currentClientHeight) >= document.body.clientHeight){
+  }else if(Math.round(currentClientHeight + 1) >= document.body.clientHeight){
     selectedNavIndex = navItems.length - 1;
   }
+
   selectNavItem(navItems[selectedNavIndex]);
 });
