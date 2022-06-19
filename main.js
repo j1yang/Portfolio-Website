@@ -22,6 +22,7 @@ navbarMenu.addEventListener('click', (event)=>{
   }
   navbarMenu.classList.remove('open');
   scrollIntoView(link);
+  selectNavItem(target);
 });
 
 //Navbar toggle button click-> show dropdown
@@ -56,6 +57,7 @@ document.addEventListener('scroll',()=>{
 
 arrowUp.addEventListener('click',()=>{
   scrollIntoView('#home');
+  selectNavItem(navItems[0]);
 });
 
 function scrollIntoView(selector){
@@ -98,6 +100,9 @@ porjectBtnContainer.addEventListener('click', (e)=>{
   },300)
 });
 
+
+
+
 const sectionIds = [
   '#home',
   '#about',
@@ -109,8 +114,18 @@ const sectionIds = [
 
 const sections = sectionIds.map(id=> document.querySelector(id));
 const navItems = sectionIds.map(id=>document.querySelector(`[data-link="${id}"]`))
-console.log(sections);
-console.log(navItems);
+
+
+let selectedNavItem = navItems[0];
+let selectedNavIndex;
+
+
+function selectNavItem(selected){
+  selectedNavItem.classList.remove('active')
+  selectedNavItem = selected;
+  selectedNavItem.classList.add('active');
+};
+
 
 const observerOption = {
   root:null,
@@ -118,11 +133,33 @@ const observerOption = {
   threshold: 0.3
 };
 
+
+
 const observerCallback = (entries, observer) => {
   entries.forEach(entry => {
-    console.log(entry.target);
+    if(!entry.isIntersecting && entry.intersectionRatio > 0){
+      const index = sectionIds.indexOf(`#${entry.target.id}`);
+      
+      if(entry.boundingClientRect.y < 0){
+        selectedNavIndex = index + 1;
+      }else{
+        selectedNavIndex = index -1;
+      }
+    }
   });
 };
 
+
+
 const observer = new IntersectionObserver(observerCallback, observerOption);
-sections.forEach(section => observer.observe(section))
+sections.forEach(section => observer.observe(section));
+
+
+window.addEventListener('wheel', ()=>{
+  if(window.scrollY === 0){
+    selectedNavIndex = 0;
+  }else if( Math.round(window.scrollY + window.innerHeight) >= document.body.clientHeight){
+    selectedNavIndex = navItems.length - 1;
+  }
+  selectNavItem(navItems[selectedNavIndex]);
+});

@@ -301,6 +301,8 @@ p {
   max-width: 1200px;
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .skillset {
@@ -438,6 +440,7 @@ font-weight: bold;
   margin: 2px;
   background-color: var(--color-light-white);
   position: relative;
+  margin-bottom: 2em;
 }
 
 .project.invisible{
@@ -490,7 +493,7 @@ font-weight: bold;
 #contact {
   background-color: var(--color-black);
   text-align: center;
-  padding: 50px 50px 20px 50px;
+  padding: 60px 50px 60px 50px;
 }
 
 .contact__email {
@@ -509,7 +512,7 @@ font-weight: bold;
   height: 52px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .contact__links i {
@@ -531,6 +534,9 @@ font-weight: bold;
   text-align: center;
 }
 
+.testimonial_section{
+  padding: 20px 50px 50px 50px;
+}
 .testimonial__section-container{
   width: 80%;
   max-width: 1250px;
@@ -539,7 +545,7 @@ font-weight: bold;
 
 .testimonials {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 0;
   margin: auto;
 }
 
