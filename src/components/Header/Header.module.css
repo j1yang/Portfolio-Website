@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+.header {
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+}
+.header h1 {
+  text-align: center;  
+  margin-top: 0.3em;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;    
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: black;
+}
+
+.header h1::selection {
+  color: black;
+  background: rgb(24, 255, 224);
+}

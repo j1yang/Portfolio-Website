@@ -1,0 +1,30 @@
+.footer {
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  padding: 20px;
+}
+
+.footer p {
+  text-align: center;  
+  margin-top: 0.3em;
+  margin-left: 1em;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: linear-gradient(to left, #000000, #2d2d2d);
+  font-family: 'Amatic SC', cursive;    
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer p::selection {
+  color: black;
+  background: rgb(24, 255, 224);
+}
