@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './Header.module.css';
 
 interface HeaderProps {
   title: string;
@@ -7,8 +6,8 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ title }) => {
   return (
-    <header className={styles.header}>
-      <h1>{title}</h1>
+    <header >
+      <h1 className="text-6xl	font-extrabold">{title}</h1>
     </header>
   );
 };

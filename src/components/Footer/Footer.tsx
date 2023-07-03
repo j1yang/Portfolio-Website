@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './Footer.module.css';
 
 interface FooterProps {
   text: string;
@@ -7,7 +6,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ text }) => {
   return (
-    <footer className={styles.footer}>
+    <footer >
       <p>{text}</p>
     </footer>
   );
