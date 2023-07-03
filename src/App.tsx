@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer'
 function App() {
 
   return (
-    <div className=''>
+    <div>
       <Header title={"Jaewon"}/>
       <Main/>
       <Footer text='this is footer'/>
