@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../../UI/Button/Button';
 
 interface MainProps {
 }
@@ -13,7 +12,7 @@ const Introduction: React.FC<MainProps> = ({ }) => {
 
   return (
     <section className='w-[100%] p-10'>
-        <h1 className="text-5xl font-semibold m-11 "><span className='link link-underline link-underline-grey'>Hi, I'm Jaewon 😁</span><br />
+        <h1 className="text-5xl font-semibold m-11 "><span className='link link-underline link-underline-grey'>Hi, I'm Jaewon <span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br />
           <small className="font-semibold link link-underline link-underline-grey">
           Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit. <br /> 
           </small>
