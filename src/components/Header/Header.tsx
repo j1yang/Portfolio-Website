@@ -7,7 +7,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ title }) => {
   
   return (
-    <header className='flex justify-between'>
+    <header className='flex justify-between py-7'>
       <h1 className="text-5xl font-extrabold">
       <a href="/">
           <span className='text-blue-900'> &lt;</span>

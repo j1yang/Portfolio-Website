@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Lottie from "lottie-react";
+import lottie from '../../../assets/lottie2.json'
 interface MainProps {
 }
 
@@ -11,12 +12,18 @@ const Introduction: React.FC<MainProps> = ({ }) => {
   // ]
 
   return (
-    <section className='w-[100%] p-10'>
-        <h1 className="text-5xl font-semibold m-11 "><span className='link link-underline link-underline-grey'>Hi, I'm Jaewon <span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br />
-          <small className="font-semibold link link-underline link-underline-grey">
-          Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit. <br /> 
-          </small>
-        </h1>
+    <section className='w-[100%] py-5'>
+        <div className='flex'>
+        <div className='w-[70%] my-auto ml-3'>
+          <h1 className="text-7xl font-semibold ml-5 leading-none"><span className='link link-underline link-underline-grey'>Hi all, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
+          <div className='w-[700px] mt-5 ml-6'>
+            <small className="text-4xl font-semibold link link-underline link-underline-grey">
+            I'm passionate WebXR Developer having experience of building Immersive Web  with JS, TS / React / Nodejs / THREEjs.
+            </small>
+          </div>
+        </div>
+        <Lottie animationData={lottie} loop={true} />
+        </div>
         {/* <div className='w-[400px] flex justify-between m-auto anim'>
           {
             buttons.map((button) =>
