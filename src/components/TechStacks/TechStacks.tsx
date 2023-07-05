@@ -1,10 +1,13 @@
 import React from 'react';
-import {BiLogoJavascript,BiLogoTypescript, BiLogoReact,BiLogoNodejs,BiLogoMongodb,BiLogoFirebase,BiLogoRedux, BiLogoTailwindCss,BiLogoPython,BiLogoUnity} from 'react-icons/bi';
+import {BiLogoJavascript,BiLogoTypescript, BiLogoReact,BiLogoNodejs,BiLogoMongodb,BiLogoFirebase,BiLogoRedux, BiLogoTailwindCss,BiLogoPython,BiLogoUnity,
+  BiLogoBlender} from 'react-icons/bi';
 import {TbBrandThreejs, TbBrandCSharp} from 'react-icons/tb';
 import {SiExpress, SiSvelte, SiWebpack,SiVite} from 'react-icons/si';
 import {GiFeather} from 'react-icons/gi';
+import {CgAtlasian} from 'react-icons/cg';
+import {BsSlack} from 'react-icons/bs';
 import Lottie from "lottie-react";
-import lottie from '../../assets/tool.json'
+import lottie from '../../assets/tool.json';
 
 interface TechStacksProps {
 }
@@ -13,6 +16,7 @@ const TechStacks: React.FC<TechStacksProps> = ({ }) => {
 
   return (
     <section id='Skills' className='w-[100%] p-10 mt-14 pt-14'>
+      <div className='h-[50px]'></div>
       <div className='flex justify-center'>
         <Lottie className='w-[450px]' animationData={lottie} loop={true} />
         <div className='w-[450px] ml-14 my-auto'>
@@ -57,6 +61,10 @@ const TechStacks: React.FC<TechStacksProps> = ({ }) => {
                 <SiSvelte style={{color: '#666666', height: 50, width: 50 }} />
                 <p className='text-center text-xs'>Svelte</p>
               </div>
+              <div className='flex flex-col mr-4 mb-3'>
+                <BiLogoTailwindCss style={{color: '#666666', height: 50, width: 50 }} />
+                <p className='text-center text-xs'>Tailwind CSS</p>
+              </div>
             </div>
             <div className='w-[full] flex '>
               <div className='flex flex-col mr-4 mb-3'>
@@ -90,8 +98,16 @@ const TechStacks: React.FC<TechStacksProps> = ({ }) => {
                 <p className='text-center text-xs'>Webpack</p>
               </div>
               <div className='flex flex-col mr-4 mb-3'>
-                <BiLogoTailwindCss style={{color: '#666666', height: 50, width: 50 }} />
-                <p className='text-center text-xs'>Tailwind CSS</p>
+                <BsSlack style={{color: '#666666', height: 50, width: 50 }} />
+                <p className='text-center text-xs'>Slack</p>
+              </div>
+              <div className='flex flex-col mr-4 mb-3'>
+                <BiLogoBlender style={{color: '#666666', height: 50, width: 50 }} />
+                <p className='text-center text-xs'>Blender</p>
+              </div>
+              <div className='flex flex-col mr-4 mb-3'>
+                <CgAtlasian style={{color: '#666666', height: 50, width: 50 }} />
+                <p className='text-center text-xs'>Atlassian</p>
               </div>
             </div>
           </div>
