@@ -29,7 +29,7 @@ function App() {
             <Header title="Jaewon" />
           </div>
       <Main/>
-      <Footer text='© 2023 Copyright: Jaewon Yang'/></div>}
+      <Footer text='2023'/></div>}
     </div>
   )
 }
