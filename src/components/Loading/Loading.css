@@ -1,0 +1,59 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-ripple {
+  width: 70px;
+  height: 70px;
+  border: 4px solid #000000;
+  border-radius: 50%;
+  position: relative;
+  animation: rippleAnimation 2.5s infinite;
+}
+
+.loader-ripple:before,
+.loader-ripple:after {
+  content: '';
+  position: absolute;
+  border: 4px solid #000000;
+  border-radius: 50%;
+  opacity: 0;
+  animation: rippleAnimation 2.5s infinite;
+}
+
+.loader-ripple:before {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.loader-ripple:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation-delay: 0s;
+}
+p{
+  font-size: large;
+}
+@keyframes rippleAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
