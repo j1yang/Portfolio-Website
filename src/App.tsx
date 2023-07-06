@@ -3,7 +3,7 @@ import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
 import Loading from './components/Loading/Loading'
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
             <Header title="Jaewon" />
           </div>
       <Main/>
-      <Footer text='this is footer'/></div>}
+      <Footer text='© 2023 Copyright: Jaewon Yang'/></div>}
     </div>
   )
 }

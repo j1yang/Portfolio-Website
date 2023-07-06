@@ -7,7 +7,7 @@ import Contacts from '../Contacts/Contacts';
 interface MainProps {
 }
 
-const Header: React.FC<MainProps> = ({ }) => {
+const Main: React.FC<MainProps> = ({ }) => {
 
   return (
     <main>
@@ -19,4 +19,4 @@ const Header: React.FC<MainProps> = ({ }) => {
   );
 };
 
-export default Header;
+export default Main;
