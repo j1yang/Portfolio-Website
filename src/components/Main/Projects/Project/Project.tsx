@@ -14,9 +14,9 @@ interface ProjectProps {
 const Project: React.FC<ProjectProps> = ({img, title, text, github, live, flexDir }) => {
   return (
     <div className={`w-[900px] h-[320px] flex mx-auto mb-14 ${flexDir}`}>
-      <img className='w-[380px] h-[300px] rounded-lg shadow-2xl hover:scale-105 transition duration-500' src={img} alt="" />
-      <div className='w-[500px]'></div>
-      <div className='flex flex-col'>
+      <img className='w-[380px] h-[300px] rounded-lg shadow-2xl hover:scale-105 transition duration-500 my-auto' src={img} alt="" />
+      <div className='w-[70px]'></div>
+      <div className='flex flex-col w-[450px] my-auto'>
         <div className='h-[260px]'>
           <h3 className='text-2xl mb-4 font-semibold'>{title}</h3>
           <p>{text}</p>

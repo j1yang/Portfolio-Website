@@ -1,80 +1,71 @@
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+// portfolio.ts
 
-interface SkillsSection {
-  skills: string[];
-  softwareSkills: {
-    fontAwesomeClassname: IconDefinition;
-    skillName: string;
-  }[];
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  githubLink?: string;
+  websiteLink?: string;
+  css:string;
 }
 
-const skillsSection: SkillsSection = {
-  title: "Skills",
-  subTitle: "subtitle subtitle subtitle subtitle",
-  skills: [
-    "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-    "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-    "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-  ],
+const portfolio: Project[] = [
+  {
+    id: 'project1',
+    title: 'Project 1',
+    description: 'This is the description for Project 1.',
+    imageUrl: 'https://res.cloudinary.com/practicaldev/image/fetch/s--v4013JHR--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/91polur10vt0b2jkbvuh.jpg',
+    githubLink: 'https://github.com/username/project1',
+    websiteLink: 'https://project1.example.com',
+    css:''
+  },
+  {
+    id: 'project2',
+    title: 'Project 2',
+    description: 'This is the description for Project 1.',
+    imageUrl: 'https://res.cloudinary.com/practicaldev/image/fetch/s--v4013JHR--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/91polur10vt0b2jkbvuh.jpg',
+    githubLink: 'https://github.com/username/project1',
+    websiteLink: 'https://project1.example.com',
+    css:'flex-row-reverse'
+  },
+  {
+    id: 'project3',
+    title: 'Project 3',
+    description: 'This is the description for Project 1.',
+    imageUrl: 'https://res.cloudinary.com/practicaldev/image/fetch/s--v4013JHR--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/91polur10vt0b2jkbvuh.jpg',
+    githubLink: 'https://github.com/username/project1',
+    websiteLink: 'https://project1.example.com',
+    css:''
+  },
+  {
+    id: 'project4',
+    title: 'Project 4',
+    description: 'This is the description for Project 1.',
+    imageUrl: 'https://res.cloudinary.com/practicaldev/image/fetch/s--v4013JHR--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/91polur10vt0b2jkbvuh.jpg',
+    githubLink: 'https://github.com/username/project1',
+    websiteLink: 'https://project1.example.com',
+    css:'flex-row-reverse'
+  },
+  {
+    id: 'project5',
+    title: 'Project 5',
+    description: 'This is the description for Project 1.',
+    imageUrl: 'https://res.cloudinary.com/practicaldev/image/fetch/s--v4013JHR--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/91polur10vt0b2jkbvuh.jpg',
+    githubLink: 'https://github.com/username/project1',
+    websiteLink: 'https://project1.example.com',
+    css:''
+  },
+  {
+    id: 'project6',
+    title: 'Project 6',
+    description: 'This is the description for Project 1.',
+    imageUrl: 'https://res.cloudinary.com/practicaldev/image/fetch/s--v4013JHR--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/91polur10vt0b2jkbvuh.jpg',
+    githubLink: 'https://github.com/username/project1',
+    websiteLink: 'https://project1.example.com',
+    css:'flex-row-reverse'
+  },
+  // Add more projects as needed
+];
 
-  /* https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: {prefix:"fa-brands", iconName:"fa-html5"},
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fa-brands fa-css3-alt",
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fa-brands fa-sass",
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fa-brands fa-js",
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fa-brands fa-react",
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fa-brands fa-node",
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fa-brands fa-swift",
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fa-brands fa-npm",
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database",
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fa-brands fa-aws",
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire",
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fa-brands fa-python",
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fa-brands fa-docker",
-    },
-  ],
-  display: true, // Set false to hide this section, defaults to true
-};
-export {
-  skillsSection
-};
+export default portfolio;
