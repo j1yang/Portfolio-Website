@@ -1,19 +1,34 @@
 import React, {useState} from 'react';
+import {BsGithub} from 'react-icons/bs';
+import {AiOutlineLink} from 'react-icons/ai';
+
 interface ProjectProps {
   img: string;
   title: string;
   text: string;
   github?: string;
   live?: string;
+  flexDir?: string;
 }
 
-const Project: React.FC<ProjectProps> = ({ }) => {
+const Project: React.FC<ProjectProps> = ({img, title, text, github, live, flexDir }) => {
   return (
-    <div>
-      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--v4013JHR--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/91polur10vt0b2jkbvuh.jpg" alt="" />
-      <div>
-        <h3></h3>
-        <p></p>
+    <div className={`w-[900px] h-[320px] flex mx-auto mb-14 ${flexDir}`}>
+      <img className='w-[380px] h-[300px] rounded-lg shadow-2xl hover:scale-105 transition duration-500' src={img} alt="" />
+      <div className='w-[500px]'></div>
+      <div className='flex flex-col'>
+        <div className='h-[260px]'>
+          <h3 className='text-2xl mb-4 font-semibold'>{title}</h3>
+          <p>{text}</p>
+        </div>
+        <div className='h-[40px] py-2 flex'>
+          <a href={github} target='_blank' className='mr-4'>
+            <BsGithub style={{color: '#666666', height: 27, width: 27}}/>
+          </a>
+          <a href={live} target='_blank'>
+            <AiOutlineLink style={{color: '#666666', height: 27, width: 27}}/>
+          </a>
+        </div>
       </div>
     </div>
   );
