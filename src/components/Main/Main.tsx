@@ -70,11 +70,11 @@ const Main: React.FC<MainProps> = () => {
     <main>
       <div className='mb-[12em]' ref={introductionRef}>
         <Introduction />
-      </div>
-      <div ref={techStacksRef}>
+      </div >
+      <div className='mb-[8em]' ref={techStacksRef}>
         <TechStacks />
       </div>
-      <div ref={projectsRef}>
+      <div className='mb-[8em]' ref={projectsRef}>
         <Projects />
       </div>
       <div ref={contactsRef}>
