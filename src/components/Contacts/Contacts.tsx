@@ -22,9 +22,9 @@ const Contacts: React.FC<ContactsProps> = ({ }) => {
           </div>
 
           <div className='w-[140px] flex justify-between mx-auto'>
-            <SocialIcon style={{ height: 40, width: 40 }} className='hover:scale-110 ease-in-out transition-transform' target='_blank' url="https://www.linkedin.com/in/jaewon-yang/"/>
-            <SocialIcon style={{ height: 40, width: 40 }} className='hover:scale-110 ease-in-out transition-transform' target='_blank' url="https://github.com/j1yang"/>
-            <SocialIcon style={{ height: 40, width: 40}} className='hover:scale-110 ease-in-out transition-transform' url="mailto:yangjay0129@gmail.com"/>
+            <SocialIcon style={{ height: 40, width: 40 }} className='hover:scale-110 ease-in-out transition duration-500' target='_blank' url="https://www.linkedin.com/in/jaewon-yang/"/>
+            <SocialIcon style={{ height: 40, width: 40 }} className='hover:scale-110 ease-in-out transition duration-500' target='_blank' url="https://github.com/j1yang"/>
+            <SocialIcon style={{ height: 40, width: 40}} className='hover:scale-110 ease-in-out transition duration-500' url="mailto:yangjay0129@gmail.com"/>
           </div>
         </div>
       </div>

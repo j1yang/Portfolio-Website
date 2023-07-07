@@ -15,8 +15,7 @@ interface TechStacksProps {
 const TechStacks: React.FC<TechStacksProps> = ({ }) => {
 
   return (
-    <section id='Skills' className='w-[100%] p-10 mt-14 pt-14'>
-      <div className='h-[50px]'></div>
+    <section id='Skills' className='w-[100%] py-10'>
       <div className='flex justify-center'>
         <Lottie className='w-[450px]' animationData={lottie} loop={true} />
         <div className='w-[450px] ml-14 my-auto'>
