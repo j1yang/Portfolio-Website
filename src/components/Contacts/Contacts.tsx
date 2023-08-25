@@ -1,5 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
+import Feedbacks from '../Main/Feedbacks/Feedbacks';
 
 interface ContactsProps {
 }

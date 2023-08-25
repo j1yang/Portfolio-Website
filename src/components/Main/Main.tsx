@@ -6,6 +6,7 @@ import Introduction from './Introduction/Introduction';
 import Projects from './Projects/Projects';
 import TechStacks from '../TechStacks/TechStacks';
 import Contacts from '../Contacts/Contacts';
+import Feedbacks from './Feedbacks/Feedbacks';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,6 +16,7 @@ const Main: React.FC<MainProps> = () => {
   const introductionRef = useRef<HTMLDivElement>(null);
   const techStacksRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
+  const feedbacksRef = useRef<HTMLDivElement>(null);
   const contactsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -64,6 +66,13 @@ const Main: React.FC<MainProps> = () => {
       duration: 1,
     });
     animateOnScroll(contactsRef, contactsAnimation);
+
+    const feedbacksAnimation = gsap.from(feedbacksRef.current, {
+      opacity: 0,
+      y: 100,
+      duration: 1,
+    });
+    animateOnScroll(feedbacksRef, feedbacksAnimation);
   }, []);
 
   return (
@@ -74,8 +83,11 @@ const Main: React.FC<MainProps> = () => {
       <div className='mb-[8em]' ref={techStacksRef}>
         <TechStacks />
       </div>
-      <div className='mb-[8em]' ref={projectsRef}>
+      <div className='mb-[1em]' ref={projectsRef}>
         <Projects />
+      </div>
+      <div className='mb-[12em]' ref={feedbacksRef}>
+        <Feedbacks/>
       </div>
       <div ref={contactsRef}>
         <Contacts />
