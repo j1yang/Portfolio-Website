@@ -1,7 +1,7 @@
 import React from 'react';
 import {BiLogoJavascript,BiLogoTypescript, BiLogoReact,BiLogoNodejs,BiLogoMongodb,BiLogoFirebase,BiLogoRedux, BiLogoTailwindCss,BiLogoPython,BiLogoUnity,
-  BiLogoBlender} from 'react-icons/bi';
-import {TbBrandThreejs, TbBrandCSharp} from 'react-icons/tb';
+  BiLogoBlender,BiLogoJava} from 'react-icons/bi';
+import {TbBrandThreejs, TbBrandCSharp, TbBrandNextjs} from 'react-icons/tb';
 import {SiExpress, SiSvelte, SiWebpack,SiVite} from 'react-icons/si';
 import {GiFeather} from 'react-icons/gi';
 import {CgAtlasian} from 'react-icons/cg';
@@ -42,15 +42,20 @@ const TechStacks: React.FC<TechStacksProps> = ({ }) => {
                 <TbBrandCSharp style={{color: '#666666', height: 50, width: 50 }} />
                 <p className='text-center text-xs'>C#</p>
               </div>
+              
               <div className='flex flex-col mr-4 mb-3'>
-                <BiLogoUnity style={{color: '#666666', height: 50, width: 50 }} />
-                <p className='text-center text-xs'>Unity</p>
+                <BiLogoJava style={{color: '#666666', height: 50, width: 50 }} />
+                <p className='text-center text-xs'>Java</p>
               </div>
             </div>
             <div className='w-[full] flex '>
               <div className='flex flex-col mr-4 mb-3'>
                 <BiLogoReact style={{color: '#666666', height: 50, width: 50 }} />
                 <p className='text-center text-xs'>React</p>
+              </div>
+              <div className='flex flex-col mr-4 mb-3'>
+                <TbBrandNextjs style={{color: '#666666', height: 50, width: 50 }} />
+                <p className='text-center text-xs'>Next</p>
               </div>
               <div className='flex flex-col mr-4 mb-3'>
                 <BiLogoRedux style={{color: '#666666', height: 50, width: 50 }} />
@@ -99,6 +104,10 @@ const TechStacks: React.FC<TechStacksProps> = ({ }) => {
               <div className='flex flex-col mr-4 mb-3'>
                 <BsSlack style={{color: '#666666', height: 50, width: 50 }} />
                 <p className='text-center text-xs'>Slack</p>
+              </div>
+              <div className='flex flex-col mr-4 mb-3'>
+                <BiLogoUnity style={{color: '#666666', height: 50, width: 50 }} />
+                <p className='text-center text-xs'>Unity</p>
               </div>
               <div className='flex flex-col mr-4 mb-3'>
                 <BiLogoBlender style={{color: '#666666', height: 50, width: 50 }} />
