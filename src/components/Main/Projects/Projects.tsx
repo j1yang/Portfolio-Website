@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Project from './Project/Project';
 import portfolio from '../../../portfolio';
 interface MainProps {

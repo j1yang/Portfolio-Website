@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {BsGithub} from 'react-icons/bs';
 import {AiOutlineLink} from 'react-icons/ai';
 

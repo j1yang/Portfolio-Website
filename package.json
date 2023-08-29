@@ -1,5 +1,6 @@
 {
-  "name": "2023-portfolio-website",
+  "homepage": "https://j1yang.github.io/portfolio",
+  "name": "2023-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",

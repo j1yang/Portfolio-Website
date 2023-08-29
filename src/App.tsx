@@ -8,7 +8,6 @@ import { gsap } from 'gsap';
 import { FaArrowAltCircleUp } from 'react-icons/fa';
 
 function App() {
-  const [isButtonClicked, setButtonClicked] = useState(false);
   const [showButton, setShowButton] = useState(false);
 
   const handleScroll = () => {

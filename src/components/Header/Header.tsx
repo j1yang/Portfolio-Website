@@ -5,7 +5,7 @@ interface HeaderProps {
   title: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ title }) => {
+const Header: React.FC<HeaderProps> = () => {
   const handleNavigation = (event:any, targetId:string) => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
