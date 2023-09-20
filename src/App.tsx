@@ -4,7 +4,6 @@ import Footer from './components/Footer/Footer'
 import Loading from './components/Loading/Loading'
 import { useEffect, useState } from 'react';
 import { FaArrowAltCircleUp } from 'react-icons/fa';
-import gsap from 'gsap';
 
 
 function App() {
@@ -27,11 +26,9 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const [isLoading, setIsLoading] = useState(true);
 
   const [visible,setVisible] = useState(false);
   const handleVisible = (isVisible: boolean) => {
-    setIsLoading(false);
     setVisible(isVisible);
   };
   
