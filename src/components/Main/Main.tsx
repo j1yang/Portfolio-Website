@@ -7,6 +7,7 @@ import Projects from './Projects/Projects';
 import TechStacks from '../TechStacks/TechStacks';
 import Contacts from '../Contacts/Contacts';
 import Feedbacks from './Feedbacks/Feedbacks';
+import Header from '../Header/Header';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,79 +21,67 @@ const Main: React.FC<MainProps> = () => {
   const contactsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const animateOnScroll = (ref: React.RefObject<HTMLDivElement>, animation: any) => {
-      if (ref.current) {
-        gsap.to(ref.current, {
-          opacity: 1,
-          x: 0, // Change y to x for horizontal animation
-          duration: 1,
-          scrollTrigger: {
-            trigger: ref.current,
-            start: 'top 80%',
-            end: 'bottom 80%',
-            toggleActions: 'play none none reverse',
-          },
-          onComplete: () => {
-            animation.kill();
-          },
-        });
-      }
-    };
+    gsap.fromTo(introductionRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: {
+      trigger: introductionRef.current,
+      start: 'top 80%',
+      end: 'bottom 40%',
+      scrub: 15 ,
+      once: true
+    }});
 
-    const introductionAnimation = gsap.from(introductionRef.current, {
-      opacity: 0,
-      y: 100,
-      duration: 1,
-    });
-    animateOnScroll(introductionRef, introductionAnimation);
+    gsap.fromTo(techStacksRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: {
+      trigger: techStacksRef.current,
+      start: 'top 90%',
+      end: 'bottom 60%',
+      scrub: 0.5,
+      once: true
+    }});
 
-    const techStacksAnimation = gsap.from(techStacksRef.current, {
-      opacity: 0,
-      y: 100,
-      duration: 1,
-    });
-    animateOnScroll(techStacksRef, techStacksAnimation);
+    gsap.fromTo(projectsRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: {
+      trigger: projectsRef.current,
+      start: 'top 100%',
+      end: 'bottom 60%',
+      scrub: 0.5,
+      once: true
+    }});
 
-    const projectsAnimation = gsap.from(projectsRef.current, {
-      opacity: 0,
-      y: 100,
-      duration: 1,
-    });
-    animateOnScroll(projectsRef, projectsAnimation);
+    gsap.fromTo(feedbacksRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: {
+      trigger: feedbacksRef.current,
+      start: 'top 80%',
+      end: 'bottom 20%',
+      scrub: 0.5,
+      once: true
+    }});
 
-    const contactsAnimation = gsap.from(contactsRef.current, {
-      opacity: 0,
-      x: -100, // Animation from left side
-      duration: 1,
-    });
-    animateOnScroll(contactsRef, contactsAnimation);
-
-    const feedbacksAnimation = gsap.from(feedbacksRef.current, {
-      opacity: 0,
-      y: 100,
-      duration: 1,
-    });
-    animateOnScroll(feedbacksRef, feedbacksAnimation);
+    gsap.fromTo(contactsRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: {
+      trigger: contactsRef.current,
+      start: 'top 100%',
+      end: 'bottom 90%',
+      scrub: 0.5,
+    }});
   }, []);
 
   return (
-    <main>
-      <div className='mb-[12em]' ref={introductionRef}>
-        <Introduction />
-      </div >
-      <div className='mb-[8em]' ref={techStacksRef}>
-        <TechStacks />
-      </div>
-      <div className='mb-[1em]' ref={projectsRef}>
-        <Projects />
-      </div>
-      <div className='mb-[12em]' ref={feedbacksRef}>
-        <Feedbacks/>
-      </div>
-      <div ref={contactsRef}>
-        <Contacts />
-      </div>
-    </main>
+    <div>
+      <Header title="Jaewon" />
+      <main>
+        <div className='mb-[12em]' ref={introductionRef}>
+          <Introduction />
+        </div >
+        <div className='mb-[8em]' ref={techStacksRef}>
+          <TechStacks />
+        </div>
+        <div className='mb-[1em]' ref={projectsRef}>
+          <Projects />
+        </div>
+        <div className='mb-[8em]' ref={feedbacksRef}>
+          <Feedbacks/>
+        </div>
+        <div ref={contactsRef}>
+          <Contacts />
+        </div>
+      </main>
+    </div>
   );
 };
 

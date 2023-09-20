@@ -1,11 +1,11 @@
 import './App.css'
-import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
 import Loading from './components/Loading/Loading'
-import { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
+import { useEffect, useState } from 'react';
 import { FaArrowAltCircleUp } from 'react-icons/fa';
+import gsap from 'gsap';
+
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -34,21 +34,14 @@ function App() {
     setIsLoading(false);
     setVisible(isVisible);
   };
-  const headerRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (!isLoading) {
-      gsap.from(headerRef.current, { opacity: 0, duration: 0.7, y: -100 });
-    }
-  }, [isLoading]);
+  
+
   return (
     <div>
       <Loading handleVisible={handleVisible}/>
 
       {visible && 
         <div>
-          <div ref={headerRef}>
-              <Header title="Jaewon" />
-          </div>
           <Main/>
           <Footer text='2023'/>
           <div className="fixed bottom-0 right-0 mb-8 mr-8">

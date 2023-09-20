@@ -6,7 +6,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ text }) => {
   return (
-    <section className='w-[100%] p-10 pb-4 '>
+    <section className='w-[100%] p-2 pb-4 '>
       <footer className='mx-auto px-auto text-center text-xs font-semibold'>
       <p>{text}</p>
     </footer>

@@ -7,7 +7,7 @@ import {GiFeather} from 'react-icons/gi';
 import {CgAtlasian} from 'react-icons/cg';
 import {BsSlack} from 'react-icons/bs';
 import Lottie from "lottie-react";
-import lottie from '../../assets/tool.json';
+import lottie from '../../assets/lottie_tech.json';
 
 interface TechStacksProps {
 }
