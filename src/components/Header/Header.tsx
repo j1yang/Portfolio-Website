@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProps> = () => {
           <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Projects')} href="#Projects">Projects</a>
         </li>
         <li className="mr-6">
-          <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Contacts')} href="#Contacts">Contact me</a>
+          <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Contacts')} href="#Contacts">Contact</a>
         </li>
         <li className="mr-6">
           <a className="text-2xl link link-underline link-underline-black leading-tight cursor-pointer" onClick={() => openPdfInNewTab()} >Resume</a>
