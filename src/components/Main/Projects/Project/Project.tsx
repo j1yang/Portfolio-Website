@@ -1,6 +1,6 @@
 import React from 'react';
-import {BsGithub} from 'react-icons/bs';
-import {AiOutlineLink} from 'react-icons/ai';
+// import {BsGithub} from 'react-icons/bs';
+// import {AiOutlineLink} from 'react-icons/ai';
 
 interface ProjectProps {
   img: string;
@@ -11,7 +11,7 @@ interface ProjectProps {
   flexDir?: string;
 }
 
-const Project: React.FC<ProjectProps> = ({img, title, text, github, live, flexDir }) => {
+const Project: React.FC<ProjectProps> = ({img, title, text,  flexDir }) => {
   return (
     <div className={`w-[900px] h-[320px] flex mx-auto mb-14 ${flexDir}`}>
       <img className='w-[400px] h-[320px] object-cover rounded-lg shadow-2xl hover:scale-110 transition duration-500 my-auto' src={img} alt="" />
