@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = () => {
   //   document.body.removeChild(link);
   // };
   const openPdfInNewTab = () => {
-    window.open('/portfolio/jaewonYang_resume.pdf', '_blank'); // Replace with the actual path to your PDF file
+    window.open('/portfolio/JaewonYang_cv.pdf', '_blank'); // Replace with the actual path to your PDF file
   };
 
 
@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = () => {
           <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Contacts')} href="#Contacts">Contact</a>
         </li>
         <li className="mr-6">
-          <a className="text-2xl link link-underline link-underline-black leading-tight cursor-pointer" onClick={() => openPdfInNewTab()} >Resume</a>
+          <a className="text-2xl link link-underline link-underline-black leading-tight cursor-pointer" onClick={() => openPdfInNewTab()} >CV</a>
         </li>
       </ul>
     </header>
