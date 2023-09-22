@@ -56,3 +56,25 @@ body {
   background-size: 100% 3px;
   background-position: 0 100%
 }
+
+/* Apply styles to the entire scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #272727; /* Color of the handle */
+  border-radius: 5px; /* Round the corners of the handle */
+}
+
+/* Track (the area where the handle moves) */
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Color of the track */
+  border-radius: 5px; /* Round the corners of the track */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #141414; /* Color of the handle on hover */
+}

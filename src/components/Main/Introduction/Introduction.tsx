@@ -18,7 +18,7 @@ const Introduction: React.FC<MainProps> = ({ }) => {
             <h1 className="text-7xl font-semibold ml-5 leading-none"><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
             <div className='w-[700px] mt-8 ml-6'>
               <small className="text-4xl font-semibold">
-              I'm passionate Web Developer having experience of building Immersive Web with React, TypeScript, Node and Three.js
+              I'm passionate Full Stack Developer having experience of building Immersive Web with React, TypeScript, Node and Three.js
               </small>
             </div>
           </div>

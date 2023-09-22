@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import './Loading.css';
+import { TypeAnimation } from 'react-type-animation';
 
 interface LoadingProps {
-  handleVisible: (isVisible: boolean) => void;
+  handleVisible: () => void;
 }
 
 const Loading: React.FC<LoadingProps> = ({ handleVisible }) => {
@@ -11,19 +12,14 @@ const Loading: React.FC<LoadingProps> = ({ handleVisible }) => {
 
   useEffect(() => {
     const loader = loaderRef.current;
+
     const tl = gsap.timeline({ onComplete: removeLoader });
-
-    tl.to(loader, { opacity: 0, duration: 2 });
-
-    // Minimum duration of 1 second (1000 milliseconds)
-    const minimumDuration = 4000;
-    const adjustedDuration = gsap.utils.clamp(1, minimumDuration / 1000, tl.duration());
-    tl.duration(adjustedDuration);
+    tl.to(loader, { opacity: 0, duration: 4.5, ease: "power2.inOut" }); // Adjust duration and easing as needed
 
     function removeLoader() {
       if (loader && loader.parentNode) {
         loader.parentNode.removeChild(loader);
-        handleVisible(true);
+        handleVisible();
       }
     }
   }, []);
@@ -31,8 +27,18 @@ const Loading: React.FC<LoadingProps> = ({ handleVisible }) => {
   return (
     <div ref={loaderRef} className="loader">
       <div className='flex flex-col'>
-        <div className="loader-ripple ml-2"></div>
-        <p>Welcome !</p>
+        <TypeAnimation
+          sequence={[
+            100,
+            '재  원',
+            400,
+            'Jaewon'
+          ]}
+          wrapper="span"
+          speed={1}
+          style={{ fontSize: '3em', display: 'inline-block' }}
+          repeat={0}
+        />
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const Main: React.FC<MainProps> = () => {
       trigger: introductionRef.current,
       start: 'top 80%',
       end: 'bottom 40%',
-      scrub: 15 ,
+      scrub: 50 ,
       once: true
     }});
 
@@ -40,15 +40,15 @@ const Main: React.FC<MainProps> = () => {
     gsap.fromTo(projectsRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: {
       trigger: projectsRef.current,
       start: 'top 100%',
-      end: 'bottom 60%',
+      end: 'bottom 90%',
       scrub: 0.5,
       once: true
     }});
 
     gsap.fromTo(feedbacksRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: {
       trigger: feedbacksRef.current,
-      start: 'top 80%',
-      end: 'bottom 20%',
+      start: 'top 90%',
+      end: 'bottom 40%',
       scrub: 0.5,
       once: true
     }});
@@ -58,6 +58,7 @@ const Main: React.FC<MainProps> = () => {
       start: 'top 100%',
       end: 'bottom 90%',
       scrub: 0.5,
+      once: true
     }});
   }, []);
 

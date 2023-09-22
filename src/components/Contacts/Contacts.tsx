@@ -1,6 +1,5 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-
 interface ContactsProps {
 }
 
@@ -12,7 +11,8 @@ const Contacts: React.FC<ContactsProps> = ({ }) => {
         <h2 className='text-4xl font-extrabold'></h2>
         <div className='mx-auto object-center'>
           <h3 className='text-2xl font-bold'>Jaewon Yang | Software Developer <a className=' font-bold hover:bg-yellow-400 transition duration-500 rounded-md px-1' target='_blank' href="https://www.linkedin.com/company/varlab-virtual-and-augmented-reality-lab/">@VARLab</a></h3>
-          <h3 className='text-xl mb-6 ml-2'>Leaning Is Always Fun Thing 😁</h3>
+          <h3 className='text-xl mb-6 ml-2'>Learning Is Always Fun Thing 😁</h3>
+          
 
           <div className='w-[200px] h-7 flex justify-between mb-4 text-xl mx-auto'>
               <svg className='my-auto' fill="none" stroke="currentColor"width={30} height={30} strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
