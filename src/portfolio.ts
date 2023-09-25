@@ -12,13 +12,22 @@ export interface Project {
 
 const portfolio: Project[] = [
   {
+    id: 'project0',
+    title: '2023 Bell Hackathon Project',
+    description: 'Privacy & Cyber Attack: The Terms and Conditions Defender (TCD) is a privacy protection Chrome extension that employs React and Vite for the front end, with a Flask backend utilizing the OpenAI API. It is designed to shield users from potential data exposure in the event of a company being targeted by hackers.',
+    imageUrl: 'legalAI.png',
+    githubLink: 'https://github.com/username/project1',
+    websiteLink: 'https://project1.example.com',
+    css:''
+  },
+  {
     id: 'project1',
     title: 'Motion Tracking for Avatar',
     description: 'Aimed at revolutionizing the desktop experience of the metaverse, uses THREE.js and advanced motion tracking technology MediaPipe from Google. The end goal was to provide a highly immersive learning experience for desktop users. I implemented a system for bone interpolation that could process webcam feeds in real time, translating users\' physical movements into the digital world. ',
     imageUrl: 'motiontracking.png',
     githubLink: 'https://github.com/username/project1',
     websiteLink: 'https://project1.example.com',
-    css:''
+    css:'flex-row-reverse'
   },
   {
     id: 'project2',
@@ -27,7 +36,7 @@ const portfolio: Project[] = [
     imageUrl: 'vrik1.png',
     githubLink: 'https://github.com/username/project1',
     websiteLink: 'https://project1.example.com',
-    css:'flex-row-reverse'
+    css:''
   },
   {
     id: 'project3',
@@ -36,7 +45,7 @@ const portfolio: Project[] = [
     imageUrl: 'threetravel.png',
     githubLink: 'https://github.com/username/project1',
     websiteLink: 'https://project1.example.com',
-    css:''
+    css:'flex-row-reverse'
   },
   
   {
@@ -46,7 +55,7 @@ const portfolio: Project[] = [
     imageUrl: 'rps.png',
     githubLink: 'https://github.com/username/project1',
     websiteLink: 'https://project1.example.com',
-    css:'flex-row-reverse'
+    css:''
   },
   // Add more projects as needed
 ];
