@@ -47,21 +47,34 @@ const Header: React.FC<HeaderProps> = () => {
       <button className='mr-5 lg:hidden relative' onClick={() => toggleMenu(menuOpen)}>
         {menuOpen? <CgClose style={{ height: 28, width: 28}}/> : <CgMenu style={{ height: 28, width: 28}}/>}
         {menuOpen && 
-          <ul className="absolute flex flex-col right-[0] top-[40px] items-end lg:static lg:flex lg:py-2 z-10">
+          <div>
+            <ul className="absolute flex flex-col right-[0] top-[40px] items-end lg:static lg:flex lg:py-2 z-10 md:hidden">
               <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Skills')} href="#Skills">Skills</a>
               <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Projects')} href="#Projects">Projects</a>
               <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Feedbacks')} href="#Feedbacks">Testimonials</a>
               <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Contacts')} href="#Contacts">Contact</a>
               <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={() => openPdfInNewTab()} >CV</a>
-          </ul>    
+            </ul>
+            {/* md */}
+            <ul className="hidden md:block lg:hidden absolute md:flex flex-col right-[0] top-[40px] items-end lg:static lg:flex lg:py-2 z-10">
+              <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Skills_md')} href="#Skills">Skills</a>
+              <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Projects_md')} href="#Projects">Projects</a>
+              <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Feedbacks_md')} href="#Feedbacks">Testimonials</a>
+              <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Contacts')} href="#Contacts">Contact</a>
+              <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={() => openPdfInNewTab()} >CV</a>
+            </ul>
+          </div>      
         }
       </button>
       <ul className="hidden lg:static lg:flex lg:py-2">
           <li className="mr-6">
-            <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Skills')} href="#Skills">Skills</a>
+            <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Skills_lg')} href="#Skills">Skills</a>
           </li>
           <li className="mr-6">
-            <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Projects')} href="#Projects">Projects</a>
+            <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Projects_lg')} href="#Projects">Projects</a>
+          </li>
+          <li className="mr-6">
+            <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Feedbacks_lg')} href="#Feedbacks_lg">Testimonials</a>
           </li>
           <li className="mr-6">
             <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Contacts')} href="#Contacts">Contact</a>

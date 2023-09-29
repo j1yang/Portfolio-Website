@@ -13,7 +13,8 @@ const Introduction: React.FC<MainProps> = ({ }) => {
 
   return (
     <div>
-      <section className='lg:hidden'>
+      {/* Mobile */}
+      <section className='md:hidden'>
         <div className='flex flex-full'>
           <div className='w-[100%]'>
             <div className='mx-auto mt-2' style={{ width: '300px', height: '300px' }}>
@@ -22,6 +23,22 @@ const Introduction: React.FC<MainProps> = ({ }) => {
             <h1 className="text-4xl font-semibold leading-none text-center "><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
             <div className=' mt-8 w-[300px] mx-auto text-center'>
               <small className="text-2xl font-semibold ">
+                I'm passionate Full Stack Developer having experience of building Immersive Web with React, TypeScript, Node and Three.js.
+              </small>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* MD */}
+      <section className='hidden md:block lg:hidden'>
+        <div className='flex flex-full mt-14'>
+          <div className='w-[100%]'>
+            <div className='mx-auto mt-2' style={{ width: '300px', height: '300px' }}>
+              <Lottie animationData={lottie} loop={true} />
+            </div>
+            <h1 className="text-5xl font-semibold leading-none text-center"><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
+            <div className=' mt-8 w-[650px] mx-auto text-center'>
+              <small className="text-4xl font-semibold ">
                 I'm passionate Full Stack Developer having experience of building Immersive Web with React, TypeScript, Node and Three.js.
               </small>
             </div>
