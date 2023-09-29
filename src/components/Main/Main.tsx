@@ -63,7 +63,7 @@ const Main: React.FC<MainProps> = () => {
   }, []);
 
   return (
-    <div>
+    <div className=''>
       <Header title="Jaewon" />
       <main>
         <div className='mb-[12em]' ref={introductionRef}>

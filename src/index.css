@@ -20,12 +20,7 @@
 }
 
 
-body {
-  margin: 0 auto;  
-  width: 1200px;
-  height: 100vh;
-  
-}
+
 
 @keyframes underline {
   0% {

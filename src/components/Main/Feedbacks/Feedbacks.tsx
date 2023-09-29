@@ -26,20 +26,36 @@ const Feedbacks: React.FC = () => {
   ];
 
   return (
-    <section className=" text-center w-[850px] mx-auto">
-      <h2 className='text-4xl font-extrabold '>What Others Say About Me</h2>
+    <div>
+      <section id='Feedbacks' className=" text-center w-[300px] mx-auto lg:hidden">
+        <h2 className='text-3xl font-extrabold py-4'>What Others Say About Me</h2>
 
-      <div className=" ">
-        {feedbackData.map(item => (
-          <div className=" mt-5  bg-stone-100 p-4 rounded " key={item.id}>
-            <p className="">{item.feedback}</p>
-            <p className=" text-sm">
-              - {item.name}, {item.position}
-            </p>
-          </div>
-        ))}
-      </div>
-    </section>
+        <div className=" ">
+          {feedbackData.map(item => (
+            <div className=" mt-5  bg-stone-100 p-4 rounded " key={item.id}>
+              <p className="">{item.feedback}</p>
+              <p className=" text-sm">
+                - {item.name}, {item.position}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="hidden text-center w-[850px] mx-auto lg:block">
+        <h2 className='text-4xl font-extrabold '>What Others Say About Me</h2>
+
+        <div className=" ">
+          {feedbackData.map(item => (
+            <div className=" mt-5 bg-stone-100 p-4 rounded" key={item.id}>
+              <p className="">{item.feedback}</p>
+              <p className=" text-sm">
+                - {item.name}, {item.position}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

@@ -44,10 +44,10 @@ function App() {
 
 
   return (
-    <div>
+    <div className=''>
       <Loading handleVisible={handleVisible}/>
 
-      <div className="main-content" style={{ opacity: 0 }}>
+      <div className="main-content mx-auto xl:w-[1280px] lg:w-[1024px] md:w-[768px] sm:w-[640px]" style={{ opacity: 0 }}>
         <Main/>
         <Footer text='Copyright ©2023 Jaewon Yang'/>
         <div className="fixed bottom-0 right-0 mb-8 mr-8">

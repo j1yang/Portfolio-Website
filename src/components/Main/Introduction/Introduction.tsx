@@ -12,7 +12,22 @@ const Introduction: React.FC<MainProps> = ({ }) => {
   // ]
 
   return (
-    <section className='w-[100%] py-8 pt-[8em]'>
+    <div>
+      <section className='lg:hidden'>
+        <div className='flex flex-full'>
+          <div className='w-[100%]'>
+            <div className='mx-auto mt-14' style={{ width: '300px', height: '300px' }}><Lottie animationData={lottie} loop={true} /></div>
+
+            <h1 className="text-4xl font-semibold leading-none text-center my-5"><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
+            <div className=' mt-8 w-[300px] mx-auto text-center'>
+              <small className="text-2xl font-semibold ">
+                I'm passionate Full Stack Developer having experience of building Immersive Web with React, TypeScript, Node and Three.js.
+              </small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='hidden w-[100%] my-8 pt-[8em] lg:block'>
         <div className='flex'>
           <div className='w-[70%] my-auto ml-3'>
             <h1 className="text-7xl font-semibold ml-5 leading-none"><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
@@ -24,14 +39,8 @@ const Introduction: React.FC<MainProps> = ({ }) => {
           </div>
         <Lottie animationData={lottie} loop={true} />
         </div>
-        {/* <div className='w-[400px] flex justify-between m-auto anim'>
-          {
-            buttons.map((button) =>
-            <Button name={button.name} link={button.link}/>
-            )
-          }
-        </div> */}
       </section>
+    </div>
   );
 };
 

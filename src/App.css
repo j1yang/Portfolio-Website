@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .responsive-element {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .responsive-element {
+    font-size: 1.5em;
+  }
+}
