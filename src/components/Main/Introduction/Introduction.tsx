@@ -16,9 +16,10 @@ const Introduction: React.FC<MainProps> = ({ }) => {
       <section className='lg:hidden'>
         <div className='flex flex-full'>
           <div className='w-[100%]'>
-            <div className='mx-auto mt-14' style={{ width: '300px', height: '300px' }}><Lottie animationData={lottie} loop={true} /></div>
-
-            <h1 className="text-4xl font-semibold leading-none text-center my-5"><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
+            <div className='mx-auto mt-2' style={{ width: '300px', height: '300px' }}>
+              <Lottie animationData={lottie} loop={true} />
+            </div>
+            <h1 className="text-4xl font-semibold leading-none text-center "><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
             <div className=' mt-8 w-[300px] mx-auto text-center'>
               <small className="text-2xl font-semibold ">
                 I'm passionate Full Stack Developer having experience of building Immersive Web with React, TypeScript, Node and Three.js.

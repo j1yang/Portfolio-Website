@@ -28,7 +28,7 @@ const Feedbacks: React.FC = () => {
   return (
     <div>
       <section id='Feedbacks' className=" text-center w-[300px] mx-auto lg:hidden">
-        <h2 className='text-3xl font-extrabold py-4'>What Others Say About Me</h2>
+        <h2 className='text-3xl font-extrabold py-4 mt-10'>What Others Say About Me</h2>
 
         <div className=" ">
           {feedbackData.map(item => (

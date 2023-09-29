@@ -47,12 +47,12 @@ const Header: React.FC<HeaderProps> = () => {
       <button className='mr-5 lg:hidden relative' onClick={() => toggleMenu(menuOpen)}>
         {menuOpen? <CgClose style={{ height: 28, width: 28}}/> : <CgMenu style={{ height: 28, width: 28}}/>}
         {menuOpen && 
-          <ul className="absolute flex flex-col right-[0] top-[40px] text-right lg:static lg:flex lg:py-2 z-10">
-              <a className="pt-1 text-2xl" onClick={(e) => handleNavigation(e, 'Skills')} href="#Skills">Skills</a>
-              <a className="pt-1 text-2xl" onClick={(e) => handleNavigation(e, 'Projects')} href="#Projects">Projects</a>
-              <a className="pt-1 text-2xl" onClick={(e) => handleNavigation(e, 'Feedbacks')} href="#Feedbacks">Testimonials</a>
-              <a className="pt-1 text-2xl" onClick={(e) => handleNavigation(e, 'Contacts')} href="#Contacts">Contact</a>
-              <a className="pt-1 text-2xl" onClick={() => openPdfInNewTab()} >CV</a>
+          <ul className="absolute flex flex-col right-[0] top-[40px] items-end lg:static lg:flex lg:py-2 z-10">
+              <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Skills')} href="#Skills">Skills</a>
+              <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Projects')} href="#Projects">Projects</a>
+              <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Feedbacks')} href="#Feedbacks">Testimonials</a>
+              <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={(e) => handleNavigation(e, 'Contacts')} href="#Contacts">Contact</a>
+              <a className="pt-1 text-2xl text-white p-3 mb-1 bg-[#121212] rounded w-fit" onClick={() => openPdfInNewTab()} >CV</a>
           </ul>    
         }
       </button>
