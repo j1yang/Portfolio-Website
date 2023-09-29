@@ -17,7 +17,7 @@ const Introduction: React.FC<MainProps> = ({ }) => {
       <section className='md:hidden'>
         <div className='flex flex-full'>
           <div className='w-[100%]'>
-            <div className='mx-auto mt-2' style={{ width: '300px', height: '300px' }}>
+            <div className='mx-auto' style={{ width: '280px', height: '280px' }}>
               <Lottie animationData={lottie} loop={true} />
             </div>
             <h1 className="text-4xl font-semibold leading-none text-center "><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>

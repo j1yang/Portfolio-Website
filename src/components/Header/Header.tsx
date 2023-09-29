@@ -38,7 +38,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <header className='flex justify-between my-7'>
       <h1 className="text-5xl font-extrabold">
-        <a href="/" className='text-4xl hover:scale-110'>
+        <a href="/portfolio" className='text-4xl hover:scale-110'>
           <div className='hover:scale-150 transform duration-500 ml-5'>
             <BsCode/>
           </div>
