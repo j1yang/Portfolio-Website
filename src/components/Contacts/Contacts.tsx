@@ -10,7 +10,7 @@ const Contacts: React.FC<ContactsProps> = ({ }) => {
       <div className='text-center'>
         <h2 className='text-4xl font-extrabold'></h2>
         <div className='mx-auto object-center'>
-          <h3 className='text-2xl font-bold'>Jaewon Yang | Software Developer <a className=' font-bold hover:bg-yellow-400 transition duration-500 rounded-md px-1' target='_blank' href="https://www.linkedin.com/company/varlab-virtual-and-augmented-reality-lab/">@VARLab</a></h3>
+          <h3 className='text-2xl font-bold'>Jaewon Yang | Full Stack Developer <a className=' font-bold hover:bg-yellow-400 transition duration-500 rounded-md px-1' target='_blank' href="https://www.linkedin.com/company/varlab-virtual-and-augmented-reality-lab/">@VARLab</a></h3>
           <h3 className='text-xl mb-6 ml-2'>Learning Is Always Fun Thing 😁</h3>
           
 
