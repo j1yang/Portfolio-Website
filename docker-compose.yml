@@ -1,0 +1,32 @@
+# if you are using docker-compose.yml
+
+# version: "3.4"
+# services:
+#   vite_docker:
+#     image: node:alpine
+#     container_name: vite_portfolio_docker
+#     entrypoint: /bin/sh
+#     ports:
+#       - 8000:8000
+#     working_dir: /srv/app
+#     volumes:
+#       - type: bind
+#         source: ./
+#         target: /srv/app
+#     tty: true
+
+#if you use Dockerfile
+version: "3.4"
+services:
+  vite_docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vite_portfolio_docker
+    ports:
+      - 8000:8000
+    volumes: #watch hot reload
+      - type: bind
+        source: ./
+        target: /srv/app
+    tty: true

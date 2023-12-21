@@ -79,9 +79,9 @@ const Header: React.FC<HeaderProps> = () => {
           <li className="mr-6">
             <a className="text-2xl link link-underline link-underline-black leading-tight" onClick={(e) => handleNavigation(e, 'Contacts')} href="#Contacts">Contact</a>
           </li>
-          <li className="mr-6">
+          {/* <li className="mr-6">
             <a className="text-2xl link link-underline link-underline-black leading-tight cursor-pointer" onClick={() => openPdfInNewTab()} >CV</a>
-          </li>
+          </li> */}
         </ul>    
     </header>
   );
