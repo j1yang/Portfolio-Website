@@ -20,10 +20,15 @@ const Introduction: React.FC<MainProps> = ({ }) => {
             <div className='mx-auto' style={{ width: '280px', height: '280px' }}>
               <Lottie animationData={lottie} loop={true} />
             </div>
-            <h1 className="text-4xl font-semibold leading-none text-center "><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
-            <div className=' mt-8 w-[300px] mx-auto text-center'>
-              <small className="text-2xl font-semibold ">
-                I'm passionate Full Stack Developer having experience of building Immersive Web with React, TypeScript, Node and Three.js.
+            <h1 className="text-4xl font-semibold leading-none text-center "><span>Hello! My name is </span><br /></h1>
+            <div className=' mt-2 w-[320px] mx-auto text-center'>
+              <small className="text-6xl font-bold text-[#00ADB5]">
+                Jay Yang. 
+              </small>
+            </div>
+            <div className=' mt-4 w-[320px] mx-auto text-center'>
+              <small className="text-4xl font-semibold ">
+                I'm Software Developer.
               </small>
             </div>
           </div>
@@ -36,10 +41,13 @@ const Introduction: React.FC<MainProps> = ({ }) => {
             <div className='mx-auto mt-2' style={{ width: '300px', height: '300px' }}>
               <Lottie animationData={lottie} loop={true} />
             </div>
-            <h1 className="text-5xl font-semibold leading-none text-center"><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
+            <h1 className="text-4xl font-semibold leading-none text-center"><span>Hello! My name is </span><br /></h1>
             <div className=' mt-8 w-[650px] mx-auto text-center'>
+              <small className="text-6xl font-semibold text-[#00ADB5]">
+              Jay Yang.
+              </small><br></br>
               <small className="text-4xl font-semibold ">
-                I'm passionate Full Stack Developer having experience of building Immersive Web with React, TypeScript, Node and Three.js.
+              I'm Software Developer.
               </small>
             </div>
           </div>
@@ -48,10 +56,17 @@ const Introduction: React.FC<MainProps> = ({ }) => {
       <section className='hidden w-[100%] my-8 pt-[8em] lg:block'>
         <div className='flex'>
           <div className='w-[70%] my-auto ml-3'>
-            <h1 className="text-7xl font-semibold ml-5 leading-none"><span>Hi, I'm Jaewon<span className='animate-wave inline-block transform-origin-center animate-pulse'>👋</span></span><br /></h1>
+            <h1 className="text-6xl font-semibold ml-5 leading-none"><span>Hello! My name is </span><br /></h1>
             <div className='w-[700px] mt-8 ml-6'>
-              <small className="text-4xl font-semibold">
-              I'm passionate Full Stack Developer having experience of building Immersive Web with React, TypeScript, Node and Three.js
+              <small className="text-8xl font-semibold text-[#00ADB5]">
+              Jay Yang.
+              </small>
+
+            </div>
+            <div className='w-[700px] mt-8 ml-6'>
+              <small className="text-6xl font-semibold">
+              I'm Software Developer.
+
               </small>
             </div>
           </div>
